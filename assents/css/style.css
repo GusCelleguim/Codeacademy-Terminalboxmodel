@@ -1,0 +1,145 @@
+/* 
+
+width and height - As propriedades de largura (`width`) e altura (`height`) em CSS definem o tamanho do conteúdo de uma página. `width` controla a largura de um elemento, enquanto `height` controla a altura. Essas propriedades podem ser definidas em várias unidades, como pixels, porcentagens ou ems, e são fundamentais para controlar o layout e a aparência dos elementos na página.
+
+padding - O preenchimento (`padding`) em CSS é o espaço entre o conteúdo de um elemento e sua borda. Ele pode ser definido para os quatro lados do elemento (topo, direita, fundo e esquerda) e é usado para criar espaço ao redor do conteúdo dentro de um elemento.
+
+Borda - A borda (`border`) em CSS é uma linha que envolve o conteúdo e o preenchimento, delimitando a área do elemento. As bordas podem ter diferentes estilos (como sólido, pontilhado ou tracejado), cores e larguras. Elas são úteis para destacar ou separar elementos em uma página.
+
+margin - A margem (`margin`) em CSS é o espaço ao redor de um elemento, separando-o de outros elementos na página. As margens podem ser definidas para os quatro lados de um elemento (topo, direita, fundo e esquerda). Quando você define uma margem, está instruindo o navegador a manter uma certa distância entre esse elemento e os elementos adjacentes ou as bordas do contêiner.
+
+margin: 0 auto - Esta regra CSS é usada para centralizar horizontalmente um elemento dentro de seu contêiner pai. Ao definir as margens superior e inferior como 0 e as margens esquerda e direita como `auto`, o navegador calcula automaticamente as margens esquerda e direita para que o elemento fique centralizado.
+
+min-width e max-width - Essas propriedades garantem uma largura mínima (`min-width`) e máxima (`max-width`) para a caixa de um elemento. Elas são úteis para garantir que o elemento não fique muito pequeno ou muito grande, independentemente do tamanho da tela ou do conteúdo.
+
+min-height e max-height - Semelhante às propriedades de largura, `min-height` e `max-height` garantem uma altura mínima e máxima para a caixa de um elemento. Elas são importantes para controlar o tamanho dos elementos em uma página, especialmente quando o conteúdo é dinâmico.
+
+overflow - A propriedade `overflow` em CSS controla o que acontece com o conteúdo que excede os limites de sua caixa. Ela pode ter valores como `visible` (o conteúdo excedente é mostrado), `hidden` (o conteúdo excedente é ocultado), `scroll` (barras de rolagem são adicionadas para visualizar o conteúdo excedente) ou `auto` (o navegador decide automaticamente se adiciona barras de rolagem). Essa propriedade é útil para lidar com conteúdos que não cabem em um espaço definido.
+*/
+
+@import url(/assents/css/reset.css); /*  Importando o reset cssc - reseta o padrão web  */
+
+body {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.donate {
+  visibility: hidden;
+}
+
+#banner {
+  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner .content h1 {
+  border: 3px solid white;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 1000px;
+  overflow: scroll;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
