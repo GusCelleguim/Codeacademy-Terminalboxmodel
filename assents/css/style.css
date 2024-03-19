@@ -17,7 +17,7 @@ min-height e max-height - Semelhante às propriedades de largura, `min-height` e
 overflow - A propriedade `overflow` em CSS controla o que acontece com o conteúdo que excede os limites de sua caixa. Ela pode ter valores como `visible` (o conteúdo excedente é mostrado), `hidden` (o conteúdo excedente é ocultado), `scroll` (barras de rolagem são adicionadas para visualizar o conteúdo excedente) ou `auto` (o navegador decide automaticamente se adiciona barras de rolagem). Essa propriedade é útil para lidar com conteúdos que não cabem em um espaço definido.
 */
 
-@import url(/assents/css/reset.css); /*  Importando o reset cssc - reseta o padrão web  */
+@import url(./assents/css/reset.css); /*  Importando o reset cssc - reseta o padrão web  */
 
 body {
   background-color: white;
